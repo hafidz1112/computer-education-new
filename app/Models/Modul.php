@@ -11,6 +11,7 @@ class Modul extends Model
     protected $fillable = [
         'title',
         'slug',
+        'youtube_link',
         'thumbnail',
         'konten',
         'author',

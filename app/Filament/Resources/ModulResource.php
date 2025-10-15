@@ -2,13 +2,14 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\ModulResource\Pages;
-use App\Models\Modul;
 use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Filament\Tables;
+use App\Models\Modul;
+use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Filament\Resources\Resource;
+use Filament\Forms\Components\TextInput;
+use App\Filament\Resources\ModulResource\Pages;
 
 class ModulResource extends Resource
 {
@@ -16,7 +17,6 @@ class ModulResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string $navigationLabel = 'Modul';
-    protected static ?string $navigationGroup = 'Manajemen Konten';
 
     public static function form(Form $form): Form
     {
@@ -33,6 +33,9 @@ class ModulResource extends Resource
                             ->label('Thumbnail')
                             ->directory('moduls')
                             ->required(),
+                        Forms\Components\TextInput::make('youtube_link')
+                            ->label('Link YouTube')
+                            ->placeholder('https://www.youtube.com/watch?v=xxxxx'),
 
                         Forms\Components\Textarea::make('konten')
                             ->label('Isi Modul')
@@ -63,6 +66,9 @@ class ModulResource extends Resource
                     ->searchable()
                     ->sortable(),
 
+                Tables\Columns\TextColumn::make('youtube_link')
+                ->label('Video'),
+
                 Tables\Columns\ImageColumn::make('thumbnail')
                     ->label('Thumbnail'),
 
@@ -79,6 +85,8 @@ class ModulResource extends Resource
                     ->label('Dibuat')
                     ->dateTime()
                     ->sortable(),
+                
+                // ->view('tables.columns.youtube-player'),
             ])
             ->filters([])
             ->actions([

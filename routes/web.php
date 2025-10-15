@@ -9,6 +9,6 @@ Route::get('/', function () {
 Route::get('/home', function() {
     return view('home');
 });
-Route::get('/moduls', [ModulController::class, 'index'])->name('moduls.index');
+Route::get('/moduls', [ModulController::class, 'index'])->name('moduls.learn');
 Route::get('/moduls/create', [ModulController::class, 'create'])->name('moduls.create');
 Route::post('/products', [ModulController::class, 'store'])->name('moduls.store');
