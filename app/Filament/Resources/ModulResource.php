@@ -66,8 +66,8 @@ class ModulResource extends Resource
                     ->searchable()
                     ->sortable(),
 
-                Tables\Columns\TextColumn::make('youtube_link')
-                ->label('Video'),
+                // Tables\Columns\TextColumn::make('youtube_link')
+                // ->label('Video'),
 
                 Tables\Columns\ImageColumn::make('thumbnail')
                     ->label('Thumbnail'),
