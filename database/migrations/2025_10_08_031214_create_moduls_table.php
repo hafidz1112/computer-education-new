@@ -15,12 +15,14 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('slug');
+            $table->string('youtube_link')->nullable();
             $table->string('thumbnail');
             $table->text('konten');
             $table->string('author');
             $table->foreignId('category_id')
                 ->constrained('categories')
-                ->onDelete('cascade');            $table->timestamps();
+                ->onDelete('cascade');
+            $table->timestamps();
         });
     }
 
@@ -29,6 +31,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('moduls');
+        Schema::table('moduls', function (Blueprint $table) {
+            $table->dropColumn('youtube_link');
+        });
     }
 };
