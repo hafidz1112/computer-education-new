@@ -18,6 +18,17 @@ class Modul extends Model
         'category_id',
     ];
 
+    public function getYoutubeIdAttribute()
+    {
+        if (!$this->youtube_link) return null;
+
+        // contoh: https://www.youtube.com/watch?v=abcd123
+        parse_str(parse_url($this->youtube_link, PHP_URL_QUERY), $vars);
+
+        return $vars['v'] ?? null;
+    }
+
+
     // otomatis bikin slug dari title
     public function setTitleAttribute($value)
     {

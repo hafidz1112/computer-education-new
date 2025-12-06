@@ -10,30 +10,42 @@
 </head>
 <body class="bg-gray-50">
 
-    <!-- HEADER -->
-    <header class="fixed top-0 right-0 z-50 flex w-full flex-col bg-white/20 backdrop-blur-md border border-white/30 shadow-md md:flex-row md:items-center md:justify-between md:px-24 px-6 py-2.5">
-  <div class="flex w-full items-center justify-between">
-    <a href="#" class="text-2xl text-green-600">
-      <img class="w-[100px]" src="{{ asset('images/logo.png') }}" alt="Logo CE"/>
+    <header class="fixed top-0 right-0 z-50 w-full bg-white backdrop-blur-md border-b border-white/30 shadow-sm px-6 md:px-24 py-2.5">
+  <div class="flex items-center justify-between w-full md:px">
+
+    <!-- Logo -->
+    <a href="#" class="text-2xl text-green-600 flex items-center">
+      <img class="w-[110px]" src="{{ asset('images/logo.png') }}" alt="Logo CE"/>
     </a>
-    <div id="menu-icon" class="cursor-pointer text-2xl text-green-600 md:hidden">
+
+    <!-- Menu Icon Mobile -->
+    <div id="menu-icon" class="md:hidden cursor-pointer text-2xl text-green-600">
       <i class="ph ph-list"></i>
     </div>
-  </div>
 
-  <ul id="menu-list" class="hidden w-full flex-col gap-4 md:flex md:w-auto md:flex-row md:items-center md:p-0">
-    <li><a class="block rounded-md px-4 py-2 text-green-600 hover:bg-green-600 hover:text-white" href="/">Home</a></li>
-    <li><a class="block rounded-md px-4 py-2 text-green-600 hover:bg-green-600 hover:text-white" href="/#about">About Us</a></li>
-    <li><a class="block rounded-md px-4 py-2 text-green-600 hover:bg-green-600 hover:text-white" href="#learning">Learning</a></li>
-    <li><a class="block rounded-md px-4 py-2 text-green-600 hover:bg-green-600 hover:text-white" href="#pengurus">Pengurus</a></li>
-  </ul>
+    <!-- Menu Tengah -->
+    <ul id="menu-list"
+      class="hidden absolute md:static top-full left-0 bg-white md:bg-transparent w-full md:w-auto flex-col md:flex-row gap-8 md:gap-4 text-center shadow-md md:shadow-none py-6 md:py-0
+      md:flex mx-auto px-[10px]">
+      <li class="pb-[10px] md:pb-0"><a class="px-4 py-2 text-green-600 hover:text-white hover:bg-green-600 rounded-md" href="/">Home</a></li>
+      <li class="pb-[10px] md:pb-0"><a class="px-4 py-2 text-green-600 hover:text-white hover:bg-green-600 rounded-md" href="/#about">About Us</a></li>
+      <li class="pb-[10px] md:pb-0"><a class="px-4 py-2 text-green-600 hover:text-white hover:bg-green-600 rounded-md" href="/#learning">Learning</a></li>
+      <li class="pb-[10px] md:pb-0"><a class="px-4 py-2 text-green-600 hover:text-white hover:bg-green-600 rounded-md " href="/#pengurus">Pengurus</a></li>
 
-  <div class="hidden items-center text-2xl md:flex">
-    <button class="rounded-md border-none bg-[#29bb17] px-4 py-2 text-base font-medium text-white">
-      <a href="./learning/login.html">Login</a>
-    </button>
+      <!-- Button Login khusus mobile -->
+      <li class="md:hidden px-6 border-t-2 border-gray-200 pt-2">
+        <a href="/login" class="block border-2 border-[#29bb17] text-[#29bb17] text-[17px] py-2 rounded-md hover:bg-[#29bb17] hover:text-white p-0 m-0">Login</a>
+      </li>
+    </ul>
+
+    <!-- Button Login Desktop -->
+    <a href="/login"
+      class="hidden md:block bg-[#29bb17] text-white px-5 py-2 rounded-lg text-base font-medium">
+      Login
+    </a>
   </div>
 </header>
+
 
 
     <script>
