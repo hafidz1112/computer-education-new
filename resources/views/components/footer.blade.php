@@ -14,7 +14,9 @@
         
         <!-- Logo & Deskripsi -->
         <div>
-            <h2 class="text-2xl font-bold text-gray-900 mb-3">Computer Education</h2>
+            <a href="#" class="text-2xl text-green-600 flex items-center p-2">
+                <img class="w-[110px]" src="{{ asset('images/logo.png') }}" alt="Logo CE"/>
+            </a>
             <p class="text-sm leading-relaxed text-gray-500">
                 Wadah mahasiswa untuk berkreasi, berinovasi, dan berkontribusi membangun kampus yang lebih baik.
             </p>
@@ -34,7 +36,7 @@
                 <li><a href="#" class="text-gray-600 hover:text-green-600 transition">Beranda</a></li>
                 <li><a href="#" class="text-gray-600 hover:text-green-600 transition">Tentang Kami</a></li>
                 <li><a href="#" class="text-gray-600 hover:text-green-600 transition">Kegiatan</a></li>
-                <li><a href="#" class="text-gray-600 hover:text-green-600 transition">Galeri</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-green-600 transition">Pengurus</a></li>
                 <li><a href="#" class="text-gray-600 hover:text-green-600 transition">Kontak</a></li>
             </ul>
         </div>
@@ -43,9 +45,9 @@
         <div>
             <h3 class="text-lg font-semibold text-gray-900 mb-4">Kontak Kami</h3>
             <ul class="space-y-2 text-sm text-gray-600">
-                <li><i class="fa-solid fa-location-dot mr-2 text-green-500"></i>Jl. Kampus No. 10, Kota Edukasi</li>
+                <li><i class="fa-solid fa-location-dot mr-2 text-green-500"></i>Jl. Fatahilla No. 10, Kabupaten Cirebon</li>
                 <li><i class="fa-solid fa-phone mr-2 text-green-500"></i>+62 812-3456-7890</li>
-                <li><i class="fa-solid fa-envelope mr-2 text-green-500"></i>info@organisasikampus.ac.id</li>
+                <li><i class="fa-solid fa-envelope mr-2 text-green-500"></i>computer_education@umc.ac.id</li>
             </ul>
         </div>
 

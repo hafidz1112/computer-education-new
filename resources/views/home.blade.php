@@ -39,7 +39,7 @@
         <img src="{{asset('images/cameraa.png')}}" class="animasi-4 absolute top-[40%] right-[1%] z-10 w-[70px] opacity-0 filter drop-shadow-[0px_0px_10px_rgb(62,249,62)] md:top-[22%] md:right-[15%]" alt="" />
         
         <div class="z-10 text-center w-full md:text-left">
-          <h1 class="text-4xl font-bold uppercase tracking-wide text-[#29bb17] [text-shadow:2px_2px_10px_rgba(135,244,137,0.5)] md:text-5xl">Welcome to <br>Computer Education</h1>
+          <h1 class="text-4xl font-bold uppercase tracking-wide text-[#29bb17] [text-shadow:2px_2px_10px_rgba(135,244,137,0.5)] md:text-5xl font-[Poppins]">Welcome to <br>Computer Education</h1>
           <p class="mt-2 mb-6 text-lg text-green-700">Salam Teknologi</p>
         </div>
 
@@ -52,7 +52,7 @@
 
   <!-- Tentang CE -->
   <section id="about" class="py-10 px-6 bg-transparent">
-    <div class="backdrop-blur-xl bg-white/10 border-md border-white/30 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center rounded-3xl shadow-xl p-[20px] lg:px-[40px]">
+    <div class="backdrop-blur-xl bg-white/10 border-md border-white/30 max-w-6xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-12 items-center rounded-3xl shadow-xl p-[20px] lg:px-[40px]">
 
         <!-- CARD BLUR / GLASS -->
         <div class=" rounded-3xl p-4 flex justify-center">
@@ -62,8 +62,8 @@
         </div>
 
         <!-- TEXT -->
-        <div class=" p-8 rounded-3xl border border-white/30">
-            <h2 class="text-4xl font-semibold text-gray-900 mb-6 tracking-tight">
+        <div class="p-6 lg:p-8 rounded-3xl border border-white/30">
+            <h2 class="text-2xl lg:text-3xl font-semibold text-gray-900 mb-6 tracking-tight">
                 Tentang Computer Education
             </h2>
 
@@ -86,7 +86,7 @@
 
   <section class="px-5 py-19 pt-10 md:px-24" id="learning">
       <div class="py-12 px-4 text-center">
-        <h1 class="text-2xl md:text-3xl font-bold text-gray-900">Program Pembelajaran</h1>
+        <h1 class="text-2xl md:text-3xl font-bold text-gray-900 font-[Inter]">Program Pembelajaran</h1>
         <p class="mt-2 text-sm md:text-base text-gray-600">Kursus dan pelatihan yang kami tawarkan</p>
       </div>
 
@@ -153,7 +153,7 @@
     {{-- Pengurus --}}
     <section class="sec-pengurus py-12 " id="pengurus">
     <div class="strip text-center mb-10">
-        <h1 class="text-3xl font-bold text-gray-800">PENGURUS</h1>
+        <h1 class="text-3xl font-bold text-gray-800 font-[Poppins]">PENGURUS</h1>
     </div>
     
     <div class="swiper pengurus-slider w-full">

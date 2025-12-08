@@ -53,13 +53,15 @@ class KegiatanResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('judul')
-                ->label('judul'),
+                ->label('judul')
+                ->limit(8),
 
                 ImageColumn::make('dokumentasi')
                 ->label('dokumentasi'),
 
                 TextColumn::make('deskripsi')
-                ->label('deskripsi'),
+                ->label('deskripsi')
+                ->limit(5),
 
                 TextColumn::make('tanggal')
                 ->date('d  M  Y')

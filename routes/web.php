@@ -22,3 +22,4 @@ Route::get('/learn/{slug}', [LearnController::class, 'modulsByCategory'])->name(
 Route::get('/modul/{slug}', [ModulController::class, 'show'])->name('learn.show');
 
 Route::get('/kegiatan', [KegiatanController::class, 'index']);
+Route::get('/kegiatan/{id}', [KegiatanController::class, 'show'])->name('kegiatan.show');

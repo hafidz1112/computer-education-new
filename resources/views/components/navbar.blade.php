@@ -7,6 +7,7 @@
     <title>Halaman coba-coba</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="https://unpkg.com/phosphor-icons"></script>
+    
 </head>
 <body class="bg-gray-50">
 

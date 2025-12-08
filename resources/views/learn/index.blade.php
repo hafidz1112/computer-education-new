@@ -1,7 +1,7 @@
 <x-layout>
-    <section class="bg-gray-50 p-8 pt-[120px] h-auto">
+    <section class="bg-gray-50 p-8 pt-[80px] lg:pt-[120px] h-auto font-[Inter]">
         <div class="p-5 pb-10">
-            <h1 class="font-bold text-2xl">Semua Video Pembelajaran yang kami sediakan</h1>
+            <h1 class="font-bold text-xl lg:text-2xl">Semua Video Pembelajaran yang kami sediakan</h1>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
