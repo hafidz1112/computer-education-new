@@ -31,15 +31,16 @@
       <li class="pb-[10px] md:pb-0"><a class="px-4 py-2 text-green-600 hover:text-white hover:bg-green-600 rounded-md" href="/#about">About Us</a></li>
       <li class="pb-[10px] md:pb-0"><a class="px-4 py-2 text-green-600 hover:text-white hover:bg-green-600 rounded-md" href="/#learning">Learning</a></li>
       <li class="pb-[10px] md:pb-0"><a class="px-4 py-2 text-green-600 hover:text-white hover:bg-green-600 rounded-md " href="/#pengurus">Pengurus</a></li>
+      <li class="pb-[10px] md:pb-0"><a class="px-4 py-2 text-green-600 hover:text-white hover:bg-green-600 rounded-md " href="/kegiatan">Kegiatan</a></li>
 
       <!-- Button Login khusus mobile -->
       <li class="md:hidden px-6 border-t-2 border-gray-200 pt-2">
-        <a href="/login" class="block border-2 border-[#29bb17] text-[#29bb17] text-[17px] py-2 rounded-md hover:bg-[#29bb17] hover:text-white p-0 m-0">Login</a>
+        <a href="/admin" class="block border-2 border-[#29bb17] text-[#29bb17] text-[17px] py-2 rounded-md hover:bg-[#29bb17] hover:text-white p-0 m-0">Login</a>
       </li>
     </ul>
 
     <!-- Button Login Desktop -->
-    <a href="/login"
+    <a href="/admin"
       class="hidden md:block bg-[#29bb17] text-white px-5 py-2 rounded-lg text-base font-medium">
       Login
     </a>

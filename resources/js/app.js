@@ -73,7 +73,7 @@ const pengurusSwiper = new Swiper('.pengurus-slider', {
     breakpoints: {
         // Untuk layar HP (mulai dari 0px)
         0: {
-            slidesPerView: 1.3,     // <-- SAMAKAN DENGAN SLIDER LEARN
+            slidesPerView: 1,     // <-- SAMAKAN DENGAN SLIDER LEARN
             centeredSlides: true,   // <-- PASTIKAN INI ADA
             spaceBetween: 16      // <-- Beri sedikit jarak
         },

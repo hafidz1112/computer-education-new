@@ -51,21 +51,36 @@
     </section>
 
   <!-- Tentang CE -->
-  <section id="about" class="bg-green-500 text-white py-16 px-10">
-    <div class="container mx-auto grid md:grid-cols-2 gap-10 items-center">
-      <div class="rounded-2xl">
-          <img src="{{ asset('images/harlah 23.jpg') }}" alt="Tentang CE" class="block mx-auto w-[500px] h-[300px] rounded-2xl overflow-hidden">
-      </div>
+  <section id="about" class="py-10 px-6 bg-transparent">
+    <div class="backdrop-blur-xl bg-white/10 border-md border-white/30 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center rounded-3xl shadow-xl p-[20px] lg:px-[40px]">
 
-      <div>
-        <h2 class="text-3xl font-bold mb-4">TENTANG CE</h2>
-        <p class="text-lg leading-relaxed">
-          Computer Education adalah platform pembelajaran berbasis teknologi yang berfokus pada peningkatan keterampilan digital dan pengembangan sumber daya manusia di bidang IT. 
-          Kami hadir dengan semangat inovasi dan kolaborasi untuk menciptakan lingkungan belajar yang kreatif, modern, dan berdaya guna.
-        </p>
-      </div>
+        <!-- CARD BLUR / GLASS -->
+        <div class=" rounded-3xl p-4 flex justify-center">
+            <img src="{{ asset('images/harlah 23.jpg') }}" 
+                 alt="Tentang CE"
+                 class="rounded-2xl w-[100%] h-auto object-cover shadow-md opacity-95">
+        </div>
+
+        <!-- TEXT -->
+        <div class=" p-8 rounded-3xl border border-white/30">
+            <h2 class="text-4xl font-semibold text-gray-900 mb-6 tracking-tight">
+                Tentang Computer Education
+            </h2>
+
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Computer Education adalah platform pembelajaran modern yang dirancang 
+                untuk meningkatkan kemampuan digital secara kreatif dan efektif.
+            </p>
+
+            <p class="text-lg text-gray-600 leading-relaxed mt-5">
+                Dengan pendekatan desain minimalis ala Apple, kami memberikan pengalaman
+                belajar yang nyaman, elegan, dan fokus pada esensi materi.
+            </p>
+        </div>
+
     </div>
-  </section>
+</section>
+
 
   {{-- learning --}}
 
@@ -117,26 +132,36 @@
         </div>
       </div>
       {{-- button --}}  
-        <a class="inline-flex items-center gap-2 rounded-sm border border-indigo-600 px-8 py-3 text-indigo-600 hover:bg-indigo-600 hover:text-white absolute right-30  md:right-28 " href="/learn">
+        {{-- <a class="inline-flex items-center hover:gap-4 gap-2 rounded-sm border border-indigo-600 px-8 py-3 text-indigo-600 hover:bg-indigo-600 hover:text-white absolute right-30  md:right-28 backdrop-blur-xl bg-white/10 border-lg border-white/20 shadow-xl" href="/learn">
           <span class="text-sm font-small md:font-medium"> Learn more </span>
 
           <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
           </svg>
+        </a> --}}
+        {{-- btn 2 --}}
+        <a class="group absolute inline-flex items-center overflow-hidden rounded-sm border border-current px-8 py-3 text-green-500 font-md absolute right-10 md:right-30 backdrop-blur-xl bg-white/10 border-lg border-white/20 shadow-xl" href="/learn">
+          <span class="absolute -end-full transition-all group-hover:end-4">
+            <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </span>
+
+          <span class="text-sm font-medium transition-all group-hover:me-4"> Selengkapnya </span>
         </a>
   </section>
     {{-- Pengurus --}}
-    <section class="sec-pengurus py-12 bg-gray-50" id="pengurus">
+    <section class="sec-pengurus py-12 " id="pengurus">
     <div class="strip text-center mb-10">
         <h1 class="text-3xl font-bold text-gray-800">PENGURUS</h1>
     </div>
     
     <div class="swiper pengurus-slider w-full">
-        <div class="swiper-wrapper py-8 px-8">
+        <div class="swiper-wrapper py-8 px-8 ">
             
             @forelse ($pengurus as $item)
             <div class="swiper-slide flex justify-center">
-                <div class="bg-white w-full max-w-xs rounded-lg shadow-md p-6 text-center">
+                <div class="bg-white w-full max-w-xs rounded-lg shadow-md p-6 text-center backdrop-blur-xl bg-white/10 border-lg border-white/20 shadow-x">
                     <img src="{{ asset('storage/' . $item->foto) }}" alt="{{ $item->nama }}" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-green-500">
                     <h3 class="mt-4 text-xl font-semibold text-gray-900">{{ $item->nama }}</h3>
                     <p class="mt-1 text-gray-500">{{ $item->jabatan }}</p>

@@ -1,8 +1,8 @@
 <x-layout>
-    <div class="container mx-auto px-4 py-12 pt-[80px]">
+    <div class="container mx-auto px-4 py-12">
     <h1 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-10">Kategori Pembelajaran</h1>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    <div class="min-h-screen grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         @forelse($categories as $category)
             <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
                 <div class="p-6">
@@ -14,10 +14,10 @@
                     <h3 class="font-bold text-lg text-gray-800">{{ $category->name }}</h3>
                     <p class="text-sm text-gray-600 mt-1">{{ $category->moduls->count() }} modul tersedia</p>
 
-                    <a href="{{ route('moduls.learn', $category->slug) }}" 
+                    {{-- <a href="{{ route('moduls', $category->slug) }}" 
                        class="mt-4 inline-block text-green-500 hover:text-green-700 font-medium text-sm">
                         Lihat Modul →
-                    </a>
+                    </a> --}}
                 </div>
             </div>
         @empty
