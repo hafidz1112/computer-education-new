@@ -28,7 +28,7 @@
           <div class="row"> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> </div>
       </div>
       
-      <div class="grid h-full w-full items-center gap-2 px-6 md:grid-cols-2 md:px-15 pt-[50px] lg:pt-0"> 
+      <div class="grid h-full w-full items-center gap-2 px-6 md:grid-cols-2 md:px-15 pt-[90px] lg:pt-0"> 
         <div class="absolute top-[-1%] left-[-10%] z-10 md:left-auto md:top-[60px]">
           <div class="animasi-satu relative flex h-[200px] w-[200px] items-center justify-center filter drop-shadow-[0px_0px_12px_rgb(62,249,62)]">
             <img class="absolute bottom-[7%] h-[100px] w-[100px] rounded-full opacity-0 md:static" src="{{asset('images/coreldraw.png')}}" alt=""/>

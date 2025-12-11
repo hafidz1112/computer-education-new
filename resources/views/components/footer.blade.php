@@ -56,12 +56,12 @@
             <h3 class="text-lg font-semibold text-gray-900 mb-4">Langganan Berita</h3>
             <p class="text-sm mb-3 text-gray-500">Dapatkan info terbaru kegiatan kami langsung ke emailmu.</p>
 
-            <form action="#" method="POST" class="flex flex-col sm:flex-row gap-2">
-                <input type="email" placeholder="Email kamu"
+            <form onsubmit="kirimWA(event)" class="flex flex-col sm:flex-row gap-2">
+                <input id="pesan" type="text" required placeholder="Hub Admin"
                     class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 text-gray-700">
-                
+
                 <button type="submit"
-                        class="bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-md transition">
+                    class="bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-md transition">
                     Kirim
                 </button>
             </form>
@@ -76,6 +76,22 @@
 
 <!-- FontAwesome -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script>
+function kirimWA(e) {
+    e.preventDefault();
+
+    const pesan = document.getElementById('pesan').value;
+    const nomorWA = '6281291300572';
+
+    const wa = `Halo Admin . ${pesan}`;
+
+    const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(wa)}`;
+
+    window.open(url, '_blank');
+}
+</script>
+
+
 
 </body>
 </html>
