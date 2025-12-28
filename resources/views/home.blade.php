@@ -68,14 +68,9 @@
             </h2>
 
             <p class="text-lg text-gray-700 leading-relaxed">
-                Computer Education adalah platform pembelajaran modern yang dirancang 
-                untuk meningkatkan kemampuan digital secara kreatif dan efektif.
+                UKM Computer Education (CE) adalah Unit Kegiatan Mahasiswa yang berfokus pada pengembangan pengetahuan dan keterampilan di bidang komputer dan teknologi. UKM CE hadir sebagai komunitas belajar bagi mahasiswa untuk menggali potensi, berbagi ilmu, dan membangun kompetensi teknologi yang relevan dengan kebutuhan masa depa
             </p>
 
-            <p class="text-lg text-gray-600 leading-relaxed mt-5">
-                Dengan pendekatan desain minimalis ala Apple, kami memberikan pengalaman
-                belajar yang nyaman, elegan, dan fokus pada esensi materi.
-            </p>
         </div>
 
     </div>
@@ -103,7 +98,7 @@
             </div>
             <h3 class="font-bold text-lg text-gray-800">Microsoft Office</h3>
             <p class="mt-2 text-sm text-gray-600">Master Word, Excel, PowerPoint and professional document management</p>
-            <a href="#" class="mt-4 inline-block text-green-500 hover:text-green-700 text-sm font-medium">Pelajari Lebih</a>
+            <a href="/learn" class="mt-4 inline-block text-green-500 hover:text-green-700 text-sm font-medium">Pelajari Lebih</a>
           </div>
 
           <!-- Card 2: Programming -->
@@ -115,7 +110,7 @@
             </div>
             <h3 class="font-bold text-lg text-gray-800">Programming</h3>
             <p class="mt-2 text-sm text-gray-600">Learn HTML, CSS, JavaScript and web development fundamentals</p>
-            <a href="#" class="mt-4 inline-block text-green-500 hover:text-green-700 text-sm font-medium">Pelajari Lebih</a>
+            <a href="/learn" class="mt-4 inline-block text-green-500 hover:text-green-700 text-sm font-medium">Pelajari Lebih</a>
           </div>
 
           <!-- Card 3: Graphic Design -->
@@ -127,7 +122,7 @@
             </div>
             <h3 class="font-bold text-lg text-gray-800">Graphic Design</h3>
             <p class="mt-2 text-sm text-gray-600">Create stunning visuals with Figma, Photoshop and design principles</p>
-            <a href="#" class="mt-4 inline-block text-green-500 hover:text-green-700 text-sm font-medium">Pelajari Lebih</a>
+            <a href="learn" class="mt-4 inline-block text-green-500 hover:text-green-700 text-sm font-medium">Pelajari Lebih</a>
           </div>
         </div>
       </div>
