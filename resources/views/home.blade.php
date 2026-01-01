@@ -1,191 +1,290 @@
 <x-layout>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Computer Education</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  @vite('resources/css/app.css')
-  @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body class="bg-gradient-to-br from-green-100 via-white to-green-200">
-
-  <!-- Hero Section -->
-  <section class="relative h-screen w-full p-0" id="home">
-      <div class="contener">
-          <div class="curser"></div>
-          <div class="row"> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> </div>
-          <div class="row"> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> </div>
-          <div class="row"> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> </div>
-          <div class="row"> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> </div>
-          <div class="row"> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> </div>
-          <div class="row"> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <button class="hexagon"></button> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> </div>
-          <div class="row"> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> </div>
-          <div class="row"> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> </div>
-          <div class="row"> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> </div>
-          <div class="row"> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> </div>
-          <div class="row"> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> <div class="hexagon"></div> </div>
-      </div>
-      
-      <div class="grid h-full w-full items-center gap-2 px-6 md:grid-cols-2 md:px-15 pt-[90px] lg:pt-0"> 
-        <div class="absolute top-[-1%] left-[-10%] z-10 md:left-auto md:top-[60px]">
-          <div class="animasi-satu relative flex h-[200px] w-[200px] items-center justify-center filter drop-shadow-[0px_0px_12px_rgb(62,249,62)]">
-            <img class="absolute bottom-[7%] h-[100px] w-[100px] rounded-full opacity-0 md:static" src="{{asset('images/coreldraw.png')}}" alt=""/>
-          </div>
-        </div>
-        <img src="{{asset('images/coding.png')}}" class="animasi-2 absolute bottom-[7%] right-[65%] w-[75px] opacity-0 filter drop-shadow-[0px_0px_12px_rgb(62,249,62)]" alt="" />
-        <img src="{{asset('images/video.png')}}" class="animasi-3 absolute bottom-[18%] right-[-1%] z-10 w-[70px] opacity-0 filter drop-shadow-[0px_0px_12px_rgb(62,249,62)] md:right-[10%]" alt="" />
-        <img src="{{asset('images/cameraa.png')}}" class="animasi-4 absolute top-[40%] right-[1%] z-10 w-[70px] opacity-0 filter drop-shadow-[0px_0px_10px_rgb(62,249,62)] md:top-[22%] md:right-[15%]" alt="" />
-        
-        <div class="z-10 text-center w-full md:text-left">
-          <h1 class="text-4xl font-bold uppercase tracking-wide text-[#29bb17] [text-shadow:2px_2px_10px_rgba(135,244,137,0.5)] md:text-5xl font-[Poppins]">Welcome to <br>Computer Education</h1>
-          <p class="mt-2 mb-6 text-lg text-green-700">Salam Teknologi</p>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen w-full pt-30 pb-20 overflow-hidden" id="home">
+        <!-- Background Hexagons -->
+        <div class="contener">
+            <div class="curser"></div>
+            <div class="row"><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div></div>
+            <div class="row"><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div></div>
+            <div class="row"><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div></div>
+            <div class="row"><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div></div>
+            <div class="row"><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div></div>
+            <div class="row"><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><button class="hexagon"></button><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div></div>
+            <div class="row"><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div></div>
+            <div class="row"><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div></div>
+            <div class="row"><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div></div>
+            <div class="row"><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div></div>
+            <div class="row"><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div><div class="hexagon"></div></div>
         </div>
 
-        <div class="relative flex h-auto w-full items-center justify-center">
-          <img src="{{asset('images/rotasi.png')}}" class="rotasi-img absolute w-[270px] md:w-[350px]" alt=""/>
-          <img class="logo-mantul w-[250px] rounded-full md:w-[300px]" src="{{asset('images/Maskot_CE-removebg-preview.png')}}" alt="" />
-        </div>
-      </div>
-    </section>
-
-  <!-- Tentang CE -->
-  <section id="about" class="py-10 px-6 bg-transparent">
-    <div class="backdrop-blur-xl bg-white/10 border-md border-white/30 max-w-6xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-12 items-center rounded-3xl shadow-xl p-[20px] lg:px-[40px]">
-
-        <!-- CARD BLUR / GLASS -->
-        <div class=" rounded-3xl p-4 flex justify-center">
-            <img src="{{ asset('images/harlah 23.jpg') }}" 
-                 alt="Tentang CE"
-                 class="rounded-2xl w-[100%] h-auto object-cover shadow-md opacity-95">
-        </div>
-
-        <!-- TEXT -->
-        <div class="p-6 lg:p-8 rounded-3xl border border-white/30">
-            <h2 class="text-2xl lg:text-3xl font-semibold text-gray-900 mb-6 tracking-tight">
-                Tentang Computer Education
-            </h2>
-
-            <p class="text-lg text-gray-700 leading-relaxed">
-                UKM Computer Education (CE) adalah Unit Kegiatan Mahasiswa yang berfokus pada pengembangan pengetahuan dan keterampilan di bidang komputer dan teknologi. UKM CE hadir sebagai komunitas belajar bagi mahasiswa untuk menggali potensi, berbagi ilmu, dan membangun kompetensi teknologi yang relevan dengan kebutuhan masa depa
-            </p>
-
-        </div>
-
-    </div>
-</section>
-
-
-  {{-- learning --}}
-
-  <section class="px-5 py-19 pt-10 md:px-24" id="learning">
-      <div class="py-12 px-4 text-center">
-        <h1 class="text-2xl md:text-3xl font-bold text-gray-900 font-[Inter]">Program Pembelajaran</h1>
-        <p class="mt-2 text-sm md:text-base text-gray-600">Kursus dan pelatihan yang kami tawarkan</p>
-      </div>
-
-      <!-- Program Cards -->
-      <div class="container mx-auto px-4 pb-8 ">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-          <!-- Card 1: Microsoft Office -->
-          <div class="bg-blue-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div class="w-12 h-12 bg-blue-200 rounded-lg flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V7a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2z" />
-              </svg>
-            </div>
-            <h3 class="font-bold text-lg text-gray-800">Microsoft Office</h3>
-            <p class="mt-2 text-sm text-gray-600">Master Word, Excel, PowerPoint and professional document management</p>
-            <a href="/learn" class="mt-4 inline-block text-green-500 hover:text-green-700 text-sm font-medium">Pelajari Lebih</a>
-          </div>
-
-          <!-- Card 2: Programming -->
-          <div class="bg-indigo-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div class="w-12 h-12 bg-indigo-200 rounded-lg flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 16l4-16M6 9h12v2H6V9zm6 4h6v2h-6v-2zm6 4h6v2h-6v-2z" />
-              </svg>
-            </div>
-            <h3 class="font-bold text-lg text-gray-800">Programming</h3>
-            <p class="mt-2 text-sm text-gray-600">Learn HTML, CSS, JavaScript and web development fundamentals</p>
-            <a href="/learn" class="mt-4 inline-block text-green-500 hover:text-green-700 text-sm font-medium">Pelajari Lebih</a>
-          </div>
-
-          <!-- Card 3: Graphic Design -->
-          <div class="bg-purple-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div class="w-12 h-12 bg-purple-200 rounded-lg flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12v2H7v-2z" />
-              </svg>
-            </div>
-            <h3 class="font-bold text-lg text-gray-800">Graphic Design</h3>
-            <p class="mt-2 text-sm text-gray-600">Create stunning visuals with Figma, Photoshop and design principles</p>
-            <a href="learn" class="mt-4 inline-block text-green-500 hover:text-green-700 text-sm font-medium">Pelajari Lebih</a>
-          </div>
-        </div>
-      </div>
-      {{-- button --}}  
-        {{-- <a class="inline-flex items-center hover:gap-4 gap-2 rounded-sm border border-indigo-600 px-8 py-3 text-indigo-600 hover:bg-indigo-600 hover:text-white absolute right-30  md:right-28 backdrop-blur-xl bg-white/10 border-lg border-white/20 shadow-xl" href="/learn">
-          <span class="text-sm font-small md:font-medium"> Learn more </span>
-
-          <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-          </svg>
-        </a> --}}
-        {{-- btn 2 --}}
-        <a class="group absolute inline-flex items-center overflow-hidden rounded-sm border border-current px-8 py-3 text-green-500 font-md absolute right-10 md:right-30 backdrop-blur-xl bg-white/10 border-lg border-white/20 shadow-xl" href="/learn">
-          <span class="absolute -end-full transition-all group-hover:end-4">
-            <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-            </svg>
-          </span>
-
-          <span class="text-sm font-medium transition-all group-hover:me-4"> Selengkapnya </span>
-        </a>
-  </section>
-    {{-- Pengurus --}}
-    <section class="sec-pengurus py-12 " id="pengurus">
-    <div class="strip text-center mb-10">
-        <h1 class="text-3xl font-bold text-gray-800 font-[Poppins]">PENGURUS</h1>
-    </div>
-    
-    <div class="swiper pengurus-slider w-full">
-        <div class="swiper-wrapper py-8 px-8 ">
+        <!-- Content Grid -->
+        <div class="container mx-auto px-6 md:px-12 relative z-10 grid md:grid-cols-2 gap-12 items-center h-full">
             
-            @forelse ($pengurus as $item)
-            <div class="swiper-slide flex justify-center">
-                <div class="bg-white w-full max-w-xs rounded-lg shadow-md p-6 text-center backdrop-blur-xl bg-white/10 border-lg border-white/20 shadow-x">
-                    <img src="{{ asset('storage/' . $item->foto) }}" alt="{{ $item->nama }}" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-green-500">
-                    <h3 class="mt-4 text-xl font-semibold text-gray-900">{{ $item->nama }}</h3>
-                    <p class="mt-1 text-gray-500">{{ $item->jabatan }}</p>
+            <!-- Left Column: Text -->
+            <div class="text-center md:text-left space-y-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold uppercase tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-green-600 to-emerald-400 drop-shadow-sm">
+                    Welcome to <br>
+                    <span class="text-gray-800">Computer Education</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 font-medium">
+                    Salam Teknologi. Innovate, Create, and Inspire.
+                </p>
+                <div class="flex justify-center md:justify-start">
+                    <a href="#learning" class="px-8 py-3 bg-green-600 text-white rounded-full font-semibold shadow-lg hover:bg-green-700 transition transform hover:scale-105">
+                        Start Learning
+                    </a>
                 </div>
             </div>
-            @empty
-            <div class="swiper-slide">
-                <p class="text-center text-gray-500">Data pengurus belum tersedia.</p>
+
+            <!-- Right Column: Visuals (Mascot & Floating Icons) -->
+            <div class="relative flex justify-center items-center h-[400px] md:h-[500px]">
+                <!-- Rotating Background behind Mascot -->
+                <img src="{{asset('images/rotasi.png')}}" 
+                     class="rotasi-img absolute w-[300px] md:w-[450px] opacity-80" 
+                     alt="Rotating Background" />
+                
+                <!-- Mascot -->
+                <img src="{{asset('images/Maskot_CE-removebg-preview.png')}}" 
+                     class="logo-mantul relative z-20 w-[200px] md:w-[280px] drop-shadow-2xl" 
+                     alt="Mascot CE" />
+
+                <!-- Floating Icons (Positioned relative to this column) -->
+                <!-- CorelDraw -->
+                <div class="animasi-satu absolute top-0 left-0 md:left-10 z-30">
+                    <img src="{{asset('images/coreldraw.png')}}" 
+                         class="w-16 h-16 md:w-20 md:h-20 drop-shadow-lg" 
+                         alt="CorelDraw" />
+                </div>
+
+                <!-- Coding -->
+                <img src="{{asset('images/coding.png')}}" 
+                     class="animasi-2 absolute bottom-10 left-0 md:left-10 z-30 w-14 h-14 md:w-16 md:h-16 drop-shadow-lg" 
+                     alt="Coding" />
+
+                <!-- Video -->
+                <img src="{{asset('images/video.png')}}" 
+                     class="animasi-3 absolute bottom-20 right-0 md:right-10 z-30 w-14 h-14 md:w-16 md:h-16 drop-shadow-lg" 
+                     alt="Video" />
+
+                <!-- Camera -->
+                <img src="{{asset('images/cameraa.png')}}" 
+                     class="animasi-4 absolute top-10 right-0 md:right-5 z-30 w-14 h-14 md:w-16 md:h-16 drop-shadow-lg" 
+                     alt="Camera" />
             </div>
-            @endforelse
-            
         </div>
-        {{-- <div class="swiper-pagination mt-8"></div> --}}
-    </div>
-</section>
+    </section>
+
+    <!-- Tentang CE -->
+    <section id="about" class="bg-gradient-to-b from-green-500 to-emerald-600 text-white py-20 px-6">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition duration-500">
+                <img src="{{ asset('images/harlah 23.jpg') }}" alt="Tentang CE"
+                    class="w-full h-auto object-cover">
+            </div>
+
+            <div class="space-y-6">
+                <div class="inline-block px-4 py-1 bg-white/20 rounded-full text-sm font-semibold tracking-wider">ABOUT US</div>
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight">Membangun Generasi <br> Teknologi Masa Depan</h2>
+                <p class="text-lg text-green-50 leading-relaxed">
+                    Computer Education adalah platform pembelajaran berbasis teknologi yang berfokus pada
+                    peningkatan keterampilan digital dan pengembangan sumber daya manusia di bidang IT.
+                    Kami hadir dengan semangat inovasi dan kolaborasi untuk menciptakan lingkungan belajar yang
+                    kreatif, modern, dan berdaya guna.
+                </p>
+                <div class="pt-4">
+                    <a href="#" class="inline-flex items-center gap-2 text-white font-semibold hover:text-green-100 transition">
+                        Learn More <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Tracks -->
+    <section class="relative py-24 bg-gray-50 overflow-hidden" id="learning">
+        <!-- Decoration -->
+        <div class="absolute top-0 left-0 w-64 h-64 bg-green-200/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-200/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-green-600 font-semibold tracking-wider uppercase text-sm font-sans">Kurikulum Kami</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-6">Explore Our Learning Tracks.</h2>
+                <div class="w-20 h-1.5 bg-gradient-to-r from-green-500 to-emerald-400 mx-auto rounded-full mb-6"></div>
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    Kami menyediakan berbagai divisi pembelajaran untuk meningkatkan skill digitalmu, dari coding hingga kreatif visual.
+                </p>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper learn-container !pb-12 !px-4">
+                <div class="swiper-wrapper">
+                    <!-- Programming -->
+                    <div class="swiper-slide group">
+                        <div class="bg-white rounded-2xl p-3 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 h-full border border-gray-100 cursor-pointer">
+                            <div class="relative h-48 w-full rounded-xl overflow-hidden mb-5">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="{{ asset('images/programing-learn.jpg') }}" alt="Programming" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                                <div class="absolute bottom-4 left-4 z-20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                                    <span class="px-3 py-1 bg-green-500 text-white text-xs font-bold rounded-full">Divisi Utama</span>
+                                </div>
+                            </div>
+                            <div class="px-2 pb-4">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">Programming</h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-2">
+                                    Pelajari bahasa pemrograman modern, web development, dan mobile apps.
+                                </p>
+                                <span class="inline-flex items-center text-green-600 font-semibold text-sm hover:underline">
+                                    Lihat Silabus <i class="ph ph-arrow-right ml-2"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Desain Grafis -->
+                     <div class="swiper-slide group">
+                        <div class="bg-white rounded-2xl p-3 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 h-full border border-gray-100 cursor-pointer">
+                            <div class="relative h-48 w-full rounded-xl overflow-hidden mb-5">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="{{ asset('images/desainGrafis-learn.jpg') }}" alt="Desain Grafis" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="px-2 pb-4">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">Desain Grafis</h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-2">
+                                    Ciptakan visual yang memukau dengan tools desain standar industri.
+                                </p>
+                                <span class="inline-flex items-center text-green-600 font-semibold text-sm hover:underline">
+                                    Lihat Modul <i class="ph ph-arrow-right ml-2"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fotografi -->
+                    <div class="swiper-slide group">
+                        <div class="bg-white rounded-2xl p-3 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 h-full border border-gray-100 cursor-pointer">
+                            <div class="relative h-48 w-full rounded-xl overflow-hidden mb-5">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <img src="{{ asset('images/cameraa.png') }}" alt="Fotografi" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="px-2 pb-4">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">Fotografi</h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-2">
+                                    Tangkap momen terbaik dan pelajari teknik komposisi visual.
+                                </p>
+                                <span class="inline-flex items-center text-green-600 font-semibold text-sm hover:underline">
+                                    Lihat Galeri <i class="ph ph-arrow-right ml-2"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Editing -->
+                    <div class="swiper-slide group">
+                        <div class="bg-white rounded-2xl p-3 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 h-full border border-gray-100 cursor-pointer">
+                            <div class="relative h-48 w-full rounded-xl overflow-hidden mb-5">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <!-- Fix placeholder -->
+                                <img src="{{ asset('images/cameraa.png') }}" alt="Video Editing" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="px-2 pb-4">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">Video Editing</h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-2">
+                                    Edit video sinematik dan konten kreatif untuk media sosial.
+                                </p>
+                                <span class="inline-flex items-center text-green-600 font-semibold text-sm hover:underline">
+                                    Lihat Karya <i class="ph ph-arrow-right ml-2"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sistem Operasi -->
+                    <div class="swiper-slide group">
+                        <div class="bg-white rounded-2xl p-3 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 h-full border border-gray-100 cursor-pointer">
+                            <div class="relative h-48 w-full rounded-xl overflow-hidden mb-5">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <!-- Fix placeholder -->
+                                <img src="{{ asset('images/programing-learn.jpg') }}" alt="Sistem Operasi" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="px-2 pb-4">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">Sistem Operasi</h3>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-2">
+                                    Pahami cara kerja sistem komputer dan manajemen jaringan dasar.
+                                </p>
+                                <span class="inline-flex items-center text-green-600 font-semibold text-sm hover:underline">
+                                    Pelajari Lebih Lanjut <i class="ph ph-arrow-right ml-2"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Controls -->
+                <div class="swiper-pagination"></div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="mt-12 text-center">
+                 <a href="/moduls" class="inline-flex items-center gap-2 px-8 py-4 bg-gray-900 hover:bg-green-600 text-white rounded-full font-semibold transition-all duration-300 shadow-xl hover:shadow-green-500/25 group">
+                    <span>Mulai Belajar Sekarang</span>
+                    <i class="ph ph-rocket text-xl group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    {{-- Pengurus --}}
+    <section class="sec-pengurus py-20 bg-white" id="pengurus">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-900">Pengurus Kami</h1>
+            <p class="text-gray-500 mt-2">Meet the team behind Computer Education</p>
+        </div>
+
+        <div class="swiper pengurus-slider w-full px-4">
+            <div class="swiper-wrapper py-8">
+
+                @forelse ($pengurus as $item)
+                <div class="swiper-slide flex justify-center">
+                    <div class="bg-white w-72 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 text-center border border-gray-100">
+                        <div class="relative w-32 h-32 mx-auto mb-4">
+                             <div class="absolute inset-0 bg-green-200 rounded-full blur-lg opacity-50"></div>
+                             <img src="{{ asset('storage/' . $item->foto) }}" alt="{{ $item->nama }}"
+                                class="relative w-full h-full rounded-full object-cover border-4 border-white shadow-md">
+                        </div>
+                        
+                        <h3 class="mt-4 text-xl font-bold text-gray-800">{{ $item->nama }}</h3>
+                        <p class="mt-1 text-green-600 font-medium text-sm bg-green-50 inline-block px-3 py-1 rounded-full">{{ $item->jabatan }}</p>
+                    </div>
+                </div>
+                @empty
+                <div class="swiper-slide">
+                    <p class="text-center text-gray-500">Data pengurus belum tersedia.</p>
+                </div>
+                @endforelse
+
+            </div>
+            {{-- <div class="swiper-pagination mt-8"></div> --}}
+        </div>
+    </section>
 
 
-  <style>
+    <style>
     @keyframes bounce-slow {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
     }
+
     .animate-bounce-slow {
-      animation: bounce-slow 3s infinite;
+        animation: bounce-slow 3s infinite;
     }
-  </style>
-
-</body>
-</html>
-
-
+    </style>
 </x-layout>
