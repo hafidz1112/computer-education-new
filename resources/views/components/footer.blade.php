@@ -1,154 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
+<footer class="bg-gradient-to-br from-green-900 to-gray-900 text-white pt-20 pb-10 relative overflow-hidden">
+    <!-- Abstract Background Shape (Optional) -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-green-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Footer</title>
-    @vite('resources/css/app.css')
-</head>
-
-<body>
-
-    <footer class="bg-gradient-to-b from-green-700 via-green-800 to-green-900 text-green-100 py-12 px-6">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
-
-            <!-- Logo dan Deskripsi -->
-            <div>
-                <h2 class="text-2xl font-bold text-white mb-3">Organisasi Kampus</h2>
-                <p class="text-sm leading-relaxed text-green-100/90">
-                    Wadah mahasiswa untuk berkreasi, berinovasi, dan berkontribusi membangun kampus yang lebih baik.
+    <div class="container mx-auto px-6 md:px-12 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            
+            <!-- Column 1: Brand Info -->
+            <div class="space-y-6">
+                <a href="/" class="flex items-center gap-3">
+                    <img class="h-12 w-auto brightness-0 invert" src="{{ asset('images/logo.png') }}" alt="Logo CE" />
+                </a>
+                <p class="text-green-100/80 leading-relaxed text-sm">
+                    Wadah mahasiswa untuk berkreasi, berinovasi, dan berkontribusi membangun kampus yang lebih baik melalui teknologi.
                 </p>
-                <div class="flex space-x-4 mt-4">
-                    <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 hover:scale-110 transition-all duration-300">
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 hover:scale-110 transition-all duration-300">
+                        <i class="fa-brands fa-youtube text-lg"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 hover:scale-110 transition-all duration-300">
+                        <i class="fa-brands fa-tiktok text-lg"></i>
+                    </a>
                 </div>
             </div>
 
-            <footer
-                class="backdrop-blur-xl bg-white/10 border-lg border-white/20 shadow-x text-gray-700 py-14 px-6 border-t border-gray-200">
-                <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
-
-                    <!-- Logo & Deskripsi -->
-                    <div>
-                        <a href="#" class="text-2xl text-green-600 flex items-center p-2">
-                            <img class="w-[110px]" src="{{ asset('images/logo.png') }}" alt="Logo CE" />
-                        </a>
-                        <p class="text-sm leading-relaxed text-gray-500">
-                            Wadah mahasiswa untuk berkreasi, berinovasi, dan berkontribusi membangun kampus yang lebih
-                            baik.
-                        </p>
-
-                        <div class="flex space-x-4 mt-5">
-                            <a href="#" class="text-gray-400 hover:text-green-500 transition"><i
-                                    class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="text-gray-400 hover:text-green-500 transition"><i
-                                    class="fa-brands fa-instagram"></i></a>
-                            <a href="#" class="text-gray-400 hover:text-green-500 transition"><i
-                                    class="fa-brands fa-x-twitter"></i></a>
-                            <a href="#" class="text-gray-400 hover:text-green-500 transition"><i
-                                    class="fa-brands fa-youtube"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Navigasi -->
-                    <div>
-                        <h3 class="text-lg font-semibold text-white mb-4">Navigasi</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li><a href="#" class="hover:text-green-300 transition-colors">Beranda</a></li>
-                            <li><a href="#" class="hover:text-green-300 transition-colors">Tentang Kami</a></li>
-                            <li><a href="#" class="hover:text-green-300 transition-colors">Program</a></li>
-                            <li><a href="#" class="hover:text-green-300 transition-colors">Galeri</a></li>
-                            <li><a href="#" class="hover:text-green-300 transition-colors">Kontak</a></li>
-                        </ul>
-                    </div>
-                    <!-- Navigasi -->
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Navigasi</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li><a href="#" class="text-gray-600 hover:text-green-600 transition">Beranda</a></li>
-                            <li><a href="#" class="text-gray-600 hover:text-green-600 transition">Tentang Kami</a></li>
-                            <li><a href="#" class="text-gray-600 hover:text-green-600 transition">Kegiatan</a></li>
-                            <li><a href="#" class="text-gray-600 hover:text-green-600 transition">Pengurus</a></li>
-                            <li><a href="#" class="text-gray-600 hover:text-green-600 transition">Kontak</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Kontak -->
-                    <div>
-                        <h3 class="text-lg font-semibold text-white mb-4">Kontak Kami</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li><i class="fa-solid fa-location-dot mr-2 text-green-400"></i>Jl. Kampus No. 10, Kota
-                                Edukasi</li>
-                            <li><i class="fa-solid fa-phone mr-2 text-green-400"></i>+62 812-3456-7890</li>
-                            <li><i class="fa-solid fa-envelope mr-2 text-green-400"></i>info@organisasikampus.ac.id</li>
-                        </ul>
-                    </div>
-                    <!-- Kontak -->
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Kontak Kami</h3>
-                        <ul class="space-y-2 text-sm text-gray-600">
-                            <li><i class="fa-solid fa-location-dot mr-2 text-green-500"></i>Jl. Fatahilla No. 10,
-                                Kabupaten Cirebon</li>
-                            <li><i class="fa-solid fa-phone mr-2 text-green-500"></i>+62 812-3456-7890</li>
-                            <li><i class="fa-solid fa-envelope mr-2 text-green-500"></i>computer_education@umc.ac.id
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Newsletter -->
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Langganan Berita</h3>
-                        <p class="text-sm mb-3 text-gray-500">Dapatkan info terbaru kegiatan kami langsung ke emailmu.
-                        </p>
-
-                        <form onsubmit="kirimWA(event)" class="flex flex-col sm:flex-row gap-2">
-                            <input id="pesan" type="text" required placeholder="Hub Admin"
-                                class="w-full px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 text-gray-700">
-
-                            <button type="submit"
-                                class="bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-md transition">
-                                Kirim
-                            </button>
-                        </form>
-                    </div>
-                </div>
-
-                <!-- Garis pemisah -->
-                <div class="border-t border-green-700 mt-10 pt-6 text-center text-sm text-green-200/80">
-                    <p>&copy; {{ date('Y') }} Organisasi Kampus. Semua hak dilindungi.</p>
-                </div>
-            </footer>
-            <!-- Line & Copyright -->
-            <div class="border-t border-gray-200 mt-12 pt-6 text-center text-sm text-gray-500">
-                <p>&copy; {{ date('Y') }} Organisasi Kampus. Semua hak dilindungi.</p>
+            <!-- Column 2: Quick Links -->
+            <div>
+                <h3 class="text-lg font-bold mb-6 text-green-400">Jelajahi</h3>
+                <ul class="space-y-4">
+                    <li><a href="/" class="text-green-100/70 hover:text-white hover:pl-2 transition-all duration-300">Beranda</a></li>
+                    <li><a href="/#about" class="text-green-100/70 hover:text-white hover:pl-2 transition-all duration-300">Tentang Kami</a></li>
+                    <li><a href="/#learning" class="text-green-100/70 hover:text-white hover:pl-2 transition-all duration-300">Belajar</a></li>
+                    <li><a href="/kegiatan" class="text-green-100/70 hover:text-white hover:pl-2 transition-all duration-300">Kegiatan</a></li>
+                    <li><a href="/#pengurus" class="text-green-100/70 hover:text-white hover:pl-2 transition-all duration-300">Pengurus</a></li>
+                </ul>
             </div>
-    </footer>
 
-    <!-- Tambahkan fontawesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script>
+            <!-- Column 3: Contact Info -->
+            <div>
+                <h3 class="text-lg font-bold mb-6 text-green-400">Hubungi Kami</h3>
+                <ul class="space-y-4 text-green-100/80">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot mt-1 text-green-500"></i>
+                        <span>Jl. Fatahilla No. 10, Kabupaten Cirebon (Universitas Muhammadiyah Cirebon)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-green-500"></i>
+                        <span>computer_education@umc.ac.id</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-green-500"></i>
+                        <span>+62 812-9130-0572</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 4: WhatsApp Action -->
+            <div>
+                <h3 class="text-lg font-bold mb-6 text-green-400">Tanya Admin</h3>
+                <p class="text-green-100/70 text-sm mb-4">Punya pertanyaan seputar organisasi atau materi? Kirim pesan langsung.</p>
+                <form onsubmit="kirimWA(event)" class="space-y-3">
+                    <div class="relative">
+                        <input id="pesan" type="text" required placeholder="Tulis pesan..." 
+                            class="w-full bg-white/10 border border-green-500/30 rounded-lg px-4 py-3 focus:outline-none focus:border-green-500 text-white placeholder-green-100/30 transition-all">
+                    </div>
+                    <button type="submit" 
+                        class="w-full py-3 bg-gradient-to-r from-green-600 to-green-500 rounded-lg font-semibold hover:from-green-500 hover:to-green-400 shadow-lg shadow-green-900/50 hover:shadow-green-500/30 transition-all duration-300 flex items-center justify-center gap-2">
+                        <span>Kirim WhatsApp</span>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-green-100/40 text-sm">
+                &copy; {{ date('Y') }} Computer Education UMC. All rights reserved.
+            </p>
+            <div class="flex gap-6 text-sm text-green-100/40">
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- FontAwesome (Loaded if not in layout) -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script>
     function kirimWA(e) {
         e.preventDefault();
-
         const pesan = document.getElementById('pesan').value;
         const nomorWA = '6281291300572';
-
-        const wa = `Halo Admin . ${pesan}`;
-
-        const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(wa)}`;
-
+        const waText = `Halo Admin Computer Education, saya ingin bertanya: ${pesan}`;
+        const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(waText)}`;
         window.open(url, '_blank');
     }
-    </script>
-
-
-
-</body>
-
-</html>
+</script>
