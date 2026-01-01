@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ModulController;
 use App\Http\Controllers\PengurusController; // <-- 1. Tambahkan ini
+use App\Http\Controllers\LearnController;
+use App\Http\Controllers\KegiatanController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,14 +17,11 @@ use App\Http\Controllers\PengurusController; // <-- 1. Tambahkan ini
 // yang akan mengambil data pengurus dan menampilkan view 'home'.
 Route::get('/', [PengurusController::class, 'index']);
 
-// Route untuk modul sudah benar, hanya merapikan path untuk 'store'
-Route::get('/moduls', [ModulController::class, 'index'])->name('moduls.learn');
-Route::get('/moduls/create', [ModulController::class, 'create'])->name('moduls.create');
+Route::get('/learn', [LearnController::class, 'index'])->name('learn.index');
+Route::get('/learn/{slug}', [LearnController::class, 'modulsByCategory'])->name('learn.category');
 
-// Path disesuaikan agar konsisten dengan yang lain
-Route::post('/moduls', [ModulController::class, 'store'])->name('moduls.store');
+Route::get('/modul/{slug}', [ModulController::class, 'show'])->name('learn.show');
 
-// Route lama '/welcome' bisa dihapus jika tidak digunakan
-// Route::get('/welcome', function () {
-//     return view('welcome');
-// });
+Route::get('/kegiatan', [KegiatanController::class, 'index']);
+Route::get('/kegiatan/{id}', [KegiatanController::class, 'show'])->name('kegiatan.show');
+

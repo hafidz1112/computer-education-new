@@ -249,7 +249,7 @@
             <div class="container mx-auto grid md:grid-cols-2 gap-10 items-center">
                 <div class="rounded-2xl">
                     <img src="{{ asset('images/harlah 23.jpg') }}" alt="Tentang CE"
-                        class="block mx-auto w-[400px]  md:w-[600px] md:h-[400px] rounded-2xl overflow-hidden">
+                        class="block mx-auto w-[500px] h-[300px] rounded-2xl overflow-hidden">
                 </div>
 
                 <div>

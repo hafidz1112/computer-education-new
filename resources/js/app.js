@@ -8,13 +8,22 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 window.addEventListener('DOMContentLoaded', function () {
     
     // --- LOGIKA UNTUK HAMBURGER MENU ---
-    const menuIcon = document.getElementById("menu-icon");
-    const menuList = document.getElementById("menu-list");
-    if (menuIcon && menuList) {
-        menuIcon.addEventListener("click", () => {
-            menuList.classList.toggle("hidden");
-        });
+    const menuIcon = document.getElementById('menu-icon');
+  const menuList = document.getElementById('menu-list');
+
+  menuIcon.addEventListener('click', () => {
+    const isOpen = menuList.classList.contains('opacity-100');
+
+    if (isOpen) {
+      // Tutup menu
+      menuList.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      menuList.classList.add('opacity-0', '-translate-y-4', 'pointer-events-none');
+    } else {
+      // Buka menu (delay dikit biar smooth)
+      menuList.classList.remove('opacity-0', '-translate-y-4', 'pointer-events-none');
+      menuList.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
     }
+  });
 
     // --- INISIALISASI SWIPER UTAMA (JIKA ADA) ---
     // Pastikan Anda punya elemen dengan kelas .swiper-utama di HTML
@@ -73,7 +82,7 @@ const pengurusSwiper = new Swiper('.pengurus-slider', {
     breakpoints: {
         // Untuk layar HP (mulai dari 0px)
         0: {
-            slidesPerView: 1.5,     // <-- SAMAKAN DENGAN SLIDER LEARN
+            slidesPerView: 1,     // <-- SAMAKAN DENGAN SLIDER LEARN
             centeredSlides: true,   // <-- PASTIKAN INI ADA
             spaceBetween: 16      // <-- Beri sedikit jarak
         },
